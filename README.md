@@ -15,7 +15,7 @@ Das Repository enthält drei Skripte für die einzelnen Komponenten sowie ein Ha
 * **FPGA Firmware** – Kompiliert die FPGA-Firmware. *Hinweis: Das Skript sucht automatisch in der Windows-Registry nach deiner Quartus-Installation und fügt den Pfad für den Build-Prozess temporär zur Umgebungsvariable hinzu.*
 * **Hauptskript (Alles-in-einem)** – Führt alle drei oben genannten Skripte nacheinander aus, um das gesamte Projekt in einem Rutsch zu bauen.
 
-> 💡 **Bequemer Start:** Jedem Shell-Skript liegt eine passende `.bat`-Datei bei. Dadurch lassen sich die Skripte direkt per Doppelklick aus dem Windows-Explorer heraus starten, ohne vorher manuell das MinGW64-Terminal öffnen zu müssen.
+> 💡 **Bequemer Start:** Jedem Shell-Skript liegt eine passende `.bat`-Datei bei. Dadurch lassen sich die Skripte direkt per Doppelklick aus dem Windows-Explorer heraus starten, ohne vorher manuell das MSYS2-UCRT64 Terminal öffnen zu müssen.
 
 ## ⚙️ Voraussetzungen & Ordnerstruktur
 
@@ -37,7 +37,7 @@ Dein-Projektordner/
 
 1. Klone das offizielle Domesday-Duplicator-Repository in deinen Projektordner.
 2. Platziere diese Build-Skripte direkt daneben (siehe Struktur oben).
-3. Starte das gewünschte Skript entweder über die `.sh`-Datei im MinGW64-Terminal oder komfortabel über die entsprechende `.bat`-Datei per Doppelklick.
+3. Starte das gewünschte Skript entweder über die `.sh`-Datei im MSYS2-UCRT64 Terminal oder komfortabel über die entsprechende `.bat`-Datei per Doppelklick.
 
 Downloads:  
 * [Domesday Duplicator Project](https://github.com/Domesday86/DomesdayDuplicator) | [MinGW64](https://www.msys2.org/) | [Quartus](https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-windows)  
@@ -59,7 +59,7 @@ The repository contains three scripts for individual components and one main scr
 * **FPGA Firmware** – Compiles the FPGA firmware. *Note: The script automatically searches the Windows Registry for your Quartus installation and temporarily adds the path to the environment variables for the build process.*
 * **Main Script (All-in-One)** – Executes all three scripts above sequentially to build the entire project in one go.
 
-> 💡 **Convenient Launch:** Each shell script comes with a matching `.bat` file. This allows you to launch the scripts with a simple double-click from Windows Explorer, without having to open the MinGW64 terminal manually.
+> 💡 **Convenient Launch:** Each shell script comes with a matching `.bat` file. This allows you to launch the scripts with a simple double-click from Windows Explorer, without having to open the MSYS2-UCRT64 terminal manually.
 
 ## ⚙️ Requirements & Folder Structure
 
@@ -81,7 +81,7 @@ Your-Project-Folder/
 
 1. Clone the official Domesday Duplicator repository into your project folder.
 2. Place these build scripts directly next to it (as shown in the structure above).
-3. Run your desired script either via the `.sh` file inside the MinGW64 terminal or comfortably by double-clicking the corresponding `.bat` file.
+3. Run your desired script either via the `.sh` file inside the MSYS2-UCRT64 terminal or comfortably by double-clicking the corresponding `.bat` file.
 
 Downloads:  
 * [Domesday Duplicator Project](https://github.com/Domesday86/DomesdayDuplicator) | [MinGW64](https://www.msys2.org/) | [Quartus](https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-windows)  
