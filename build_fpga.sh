@@ -1,5 +1,4 @@
 #!/bin/bash
-# export PATH=$PATH:/h/altera_lite/25.1std/quartus/bin64
 
 # Automatische Suche nach Quartus auf allen verfügbaren Windows-Laufwerken
 QUARTUS_BIN=""
