@@ -19,15 +19,15 @@ ICON_SOURCE_PATH="$GUI_PATH/src/gui/resources/icon.ico"
 
 echo "=== 1. Installiere/Überprüfe benötigte MSYS2-Pakete ==="
 pacman -S --needed --noconfirm \
-    mingw-w64-x86_64-qt6-base \
-    mingw-w64-x86_64-qt6-serialport \
-    mingw-w64-x86_64-toolchain \
+    mingw-w64-ucrt-x86_64-qt6-base \
+    mingw-w64-ucrt-x86_64-qt6-serialport \
+    mingw-w64-ucrt-x86_64-toolchain \
     make \
-    mingw-w64-x86_64-libusb \
-    mingw-w64-x86_64-flac \
-    mingw-w64-x86_64-cmake \
-    mingw-w64-x86_64-rcedit \
-	mingw-w64-x86_64-spdlog \
+    mingw-w64-ucrt-x86_64-libusb \
+    mingw-w64-ucrt-x86_64-flac \
+    mingw-w64-ucrt-x86_64-cmake \
+    mingw-w64-ucrt-x86_64-rcedit \
+    mingw-w64-ucrt-x86_64-spdlog \
     git
 
 echo "=== 2. Wechsle in das Repository-Verzeichnis ==="
@@ -90,7 +90,7 @@ if [ -n "$FOUND_GUI_EXE" ]; then
         echo "WARNUNG: Icon-Datei wurde unter $ICON_SOURCE_PATH nicht gefunden!"
     fi
 else
-    echo "ERROR: Hauptanwendung ddd-gui.exe konnte nirgendwo im Build-Ordner gefunden werden!"
+    echo "ERROR: Hauptanwendung ddd-gui.exe konnte nirgewo im Build-Ordner gefunden werden!"
     exit 1
 fi
 
@@ -142,11 +142,11 @@ DLL_LIST=(
     "libbrotlicommon"
     "libgraphite2"
     "libpcre2-8-0"
-	"libspdlog-1.17"
+    "libspdlog-1.17"
 )
 
 for dll_name in "${DLL_LIST[@]}"; do
-    find /mingw64/bin/ -iname "*${dll_name}*.dll" -exec cp {} . \; 2>/dev/null || true
+    find /ucrt64/bin/ -iname "*${dll_name}*.dll" -exec cp {} . \; 2>/dev/null || true
 done
 
 echo "=============================================================================="
