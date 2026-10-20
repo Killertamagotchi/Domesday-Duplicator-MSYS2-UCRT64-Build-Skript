@@ -1,8 +1,8 @@
 [English version below](#domesday-duplicator-mingw64-build-script)
 
-# Domesday-Duplicator-MinGW64-Build-Skript
+# Domesday-Duplicator-MSYS2-UCRT64-Build-Skript
 
-Kompakte MinGW64-Build-Skripte für das **Domesday Duplicator** Projekt. 
+Kompakte MSYS2-UCRT64-Build-Skripte für das **Domesday Duplicator** Projekt. 
 
 Diese Sammlung aus vier `.sh`-Dateien erleichtert das Aktualisieren und Kompilieren des Quellcodes unter Windows mithilfe von MinGW64.
 
@@ -19,7 +19,7 @@ Das Repository enthält drei Skripte für die einzelnen Komponenten sowie ein Ha
 
 ## ⚙️ Voraussetzungen & Ordnerstruktur
 
-* **MinGW64** (für die Windows-Kompilierung)
+* **MSYS2-UCRT64** (für die Windows-Kompilierung)
 * **Altera/Intel Quartus** (wird für die FPGA-Firmware benötigt, muss aber dank Registry-Suche nicht manuell im Systempfad hinterlegt sein)
 
 Damit die Skripte korrekt funktionieren, müssen sie relativ zum geklonten Quellcode platziert werden. Richte deine Ordnerhierarchie wie folgt ein:
@@ -44,9 +44,9 @@ Downloads:
 
 ____________________________________________________
 
-# Domesday-Duplicator-MinGW64-Build-Script
+# Domesday-Duplicator-MSYS2-UCRT64-Build-Skript
 
-Lightweight MinGW64 build scripts for the **Domesday Duplicator** project.
+Lightweight MSYS2-UCRT64 build scripts for the **Domesday Duplicator** project.
 
 This collection of four `.sh` files simplifies the process of updating and compiling the source code under Windows using MinGW64.
 
@@ -63,7 +63,7 @@ The repository contains three scripts for individual components and one main scr
 
 ## ⚙️ Requirements & Folder Structure
 
-* **MinGW64** (for Windows compilation)
+* **MSYS2-UCRT64** (for Windows compilation)
 * **Altera/Intel Quartus** (required for the FPGA firmware, but does not need to be manually added to your system PATH thanks to the automated Registry search)
 
 For the scripts to work correctly, they must be placed relative to the cloned source code. Set up your folder hierarchy like this:
