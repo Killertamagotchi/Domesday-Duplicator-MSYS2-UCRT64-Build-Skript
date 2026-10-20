@@ -2,12 +2,12 @@
 title Domesday Duplicator Build System
 
 echo ==================================================================
-echo   Starte MSYS2 MinGW64-Umgebung fuer Domesday Duplicator Build...
+echo   Starte MSYS2 UCRT64-Umgebung fuer Domesday Duplicator Build...
 echo ==================================================================
 echo.
 
-rem Startet das MSYS2/MinGW64-Terminal und fuehrt die build_dd.sh im aktuellen Verzeichnis aus
-C:\msys64\msys2_shell.cmd -mingw64 -where "%~dp0" -c "./build_dd.sh"
+rem Startet das MSYS2/UCRT64-Terminal und fuehrt die build_all.sh im aktuellen Verzeichnis aus
+C:\msys64\msys2_shell.cmd -ucrt64 -where "%~dp0" -c "./build_dd.sh"
 
 echo.
 echo ==================================================================
