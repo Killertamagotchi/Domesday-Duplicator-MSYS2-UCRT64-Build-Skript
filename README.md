@@ -1,4 +1,4 @@
-[English version below](#domesday-duplicator-msys2-ucrt64-build-script)
+[English version below](#Domesday-Duplicator-MSYS2-UCRT64-Build-Skript)
 
 # Domesday-Duplicator-MSYS2-UCRT64-Build-Skript
 
