@@ -163,12 +163,12 @@ if [ -z "$FIRST_FW_IMG" ]; then
   FIRST_FW_IMG="domesday-duplicator.img"
 fi
 
-# 7c. libusb-1.0.dll kopieren
-if [ -f "/mingw64/bin/libusb-1.0.dll" ]; then
-  cp "/mingw64/bin/libusb-1.0.dll" "$APP_DIR/"
+# 7c. libusb-1.0.dll kopieren aus der UCRT64-Umgebung
+if [ -f "/ucrt64/bin/libusb-1.0.dll" ]; then
+  cp "/ucrt64/bin/libusb-1.0.dll" "$APP_DIR/"
   echo "-> libusb-1.0.dll erfolgreich kopiert"
 else
-  echo "WARNUNG: libusb-1.0.dll konnte in /mingw64/bin/ nicht gefunden werden!"
+  echo "WARNUNG: libusb-1.0.dll konnte in /ucrt64/bin/ nicht gefunden werden!"
 fi
 
 echo "=== 8. Erstelle Windows-Batchdateien (.bat) ==="
